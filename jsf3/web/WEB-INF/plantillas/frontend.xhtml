@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+    <h:head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+        <h:outputStylesheet name="./css/cssLayout.css"/>
+        <h:outputStylesheet name="./css/bootstrap.min.css"/>
+        <title>Ejemplo de Facelets Template</title>
+    </h:head>
+
+    <h:body>
+
+        <div id="top">
+            <ui:insert name="top">
+                <table width="100%">
+                    <tr>
+                        <td>
+                            <h1>SIGADIB</h1>
+                        </td>
+                        <td>
+                            <center>
+                                <h5>Sistema de Gestión Administrativa Distribuidor BICARG</h5>
+                            </center>
+                        </td>
+                        <td align="center">
+                            <button type="button" class="btn btn-primary">Logout</button>
+                            <button type="button" class="btn btn-success">Home</button>                            
+                        </td>        
+                        <td align="right">
+                            <img src="../resources/images/log.png" width="60px" height="60px"/>
+                        </td>
+                    </tr>
+                </table>
+            </ui:insert>
+        </div>
+
+        <div id="content" class="center_content">
+            <ui:insert name="content">Content</ui:insert>
+        </div>
+
+        <div id="bottom">
+            <ui:insert name="bottom"><h6><center>© 2017 SIGADIB, Inc.</center></h6></ui:insert>
+        </div>
+
+    </h:body>
+
+</html>
